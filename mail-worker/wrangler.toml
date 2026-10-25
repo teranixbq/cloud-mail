@@ -8,16 +8,16 @@ enabled = true
 
 [[d1_databases]]
 binding = "db"			#d1数据库绑定名默认不可修改
-database_name = "email"		#d1数据库名字
-database_id = "b1b1a63a-6ef5-4e6d-8e8c-b6d9e8feb810"		#d1数据库id
+database_name = "cloud-email"		#d1数据库名字
+database_id = "e3835a88-fbf6-4df2-b3b5-699d5ecf18f4"		#d1数据库id
 
 [[kv_namespaces]]
 binding = "kv"			#kv绑定名默认不可修改
-id = "0fa01d4b299e481b9de060ece9e7785c"					#kv数据库id
+id = "47dfcf978bd54bc0a3e5cdc8554f0873"					#kv数据库id
 
 [[r2_buckets]]
 binding = "r2"			#r2对象存储绑定名默认不可修改
-bucket_name = "email"		#r2对象存储桶的名字
+bucket_name = "cloud-email"		#r2对象存储桶的名字
 
 #[[send_email]]
 #name = "email"			#CF发件, 配置后优先使用
@@ -44,12 +44,6 @@ analysis_cache = false			#是否开启分析数据缓存
 orm_log = false			#是否sql日志
 domain = [
 	"skymail.ink",
-	"snd.de5.net",
-	"sp.us.ci",
-	"wq.us.ci",
-	"eml.cc.cd",
-	"nexo.nyc.mn",
-	"022335.xyz"
 ]				#邮件域名可可配置多个 示例: ["example1.com","example2.com"]
 admin = "root@skymail.ink"					#管理员的邮箱	示例: admin@example.com
 jwt_secret = "5e59074e-4843-463a-a942-272ac5b78eae"			#jwt令牌的密钥,随便填一串字符串
